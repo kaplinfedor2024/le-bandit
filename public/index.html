@@ -8,6 +8,7 @@
     
     <link rel="canonical" href="https://le-bandit.vercel.app/">
     
+   
     <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
     <meta name="yandex" content="index,follow">
     <link rel="preconnect" href="https://mc.yandex.ru">
@@ -44,9 +45,9 @@
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px 10px;
+            padding: 20px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -109,71 +110,55 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         
-        /* 🔥 КАРТОЧКИ КАЗИНО — УВЕЛИЧЕННЫЕ 🔥 */
         .casinos-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;                          /* Больше отступы */
-            margin: 40px auto;
-            max-width: 1000px;
-            width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
         }
         
         .casino-card {
             background: #08222E;
             color: white;
-            padding: 25px;                      /* Было 15px → 25px */
-            border-radius: 16px;                /* Чуть крупнее скругление */
+            padding: 25px;
+            border-radius: 16px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;                          /* Больше gap внутри */
         }
         
         .casino-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .casino-card div {
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 400;
         }
         
         .casino-image {
             width: 100%;
-            height: auto;
-            max-width: 170px;                   /* Было 130px → 170px */
-            max-height: 120px;                  /* Было 90px → 120px */
-            object-fit: contain;
-            object-position: center;
-            border-radius: 12px;                /* Крупнее скругление */
-            background: #08222E;
-            display: block;
-        }
-        
-        .casino-card div {
-            font-size: 15px;                    /* Было 13px → 15px */
-            color: white;
-            text-align: center;
-            margin-bottom: 12px;
-            font-weight: 600;                   /* Жирнее */
-            line-height: 1.4;
-            padding: 0 8px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
         }
         
         .casino-btn {
             display: inline-block;
             background: #ff4444;
             color: white;
-            padding: 12px 28px;                 /* Было 8px 18px → крупнее */
+            padding: 12px 30px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 14px;                    /* Было 12px → крупнее */
+            margin-top: 15px;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
             font-family: 'Open Sans', sans-serif;
-            white-space: nowrap;
         }
         
         .casino-btn:hover {
@@ -226,7 +211,7 @@
         
         @media (max-width: 768px) {
             .container {
-                padding: 15px 10px;
+                padding: 15px;
             }
             
             h1 { margin-bottom: 15px; }
@@ -238,17 +223,7 @@
             }
             
             .casino-card {
-                padding: 20px;                  /* На мобилках чуть меньше */
-            }
-            
-            .casino-image {
-                max-width: 140px;               /* На мобилках поменьше */
-                max-height: 100px;
-            }
-            
-            .casino-btn {
-                padding: 10px 24px;
-                font-size: 13px;
+                padding: 20px;
             }
             
             h3 {
@@ -289,9 +264,9 @@
             </p>
             
             <div class="casinos-grid">
-                <div class="casino-card">
+                    <div class="casino-card">
                     <img src="1win.png" alt="1Win казино" class="casino-image">
-                    <div>БОНУС до 500% к Депозиту</div>
+                    <div><БОНУС до 500% к Депозиту</div>
                     <a href="https://lkzq.cc/fba5" class="casino-btn">Забрать бонус 1Win</a>
                 </div>
                 
@@ -314,7 +289,7 @@
             </p>
             
             <ol class="steps-list">
-                <li>Выберите надёжное казино с действующей лицензией (например, Pin-Up, Vavada, 1win), где в каталогу доступен слот Lebandit.</li>
+                <li>Выберите надёжное казино с действующей лицензией (например, Pin-Up, Vavada, 1win), где в каталоге доступен слот Lebandit.</li>
                 <li>Перейдите на официальный сайт выбранного казино и нажмите кнопку «Регистрация».</li>
                 <li>Создайте аккаунт и пройдите верификацию личности — это стандартная процедура, требуемая для защиты ваших средств и вывода выигрышей.</li>
                 <li>Пополните депозит удобным способом: банковской картой, через электронные кошельки, мобильные платежи или криптовалюту.</li>
