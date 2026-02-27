@@ -132,14 +132,14 @@
 
 .casino-image {
     width: 100%;
-    max-width: 200px;                /* Максимум 200px */
-    height: 120px;
-    object-fit: cover;
-    object-position: center;
+    height: 120px;                    /* Фиксированная высота */
+    object-fit: cover;                /* Обрезает по пропорциям */
+    object-position: center center;   /* Центрирует картинку */
     border-radius: 12px;
     margin-bottom: 15px;
-    flex-shrink: 0;                  /* Не сжимается */
+    display: block;                   /* Убирает лишние отступы */
 }
+
 
 .casino-card div {
     color: white;
